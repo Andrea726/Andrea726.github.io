@@ -1,0 +1,69 @@
+body {
+    background-color: wheat;
+}
+
+.betta {
+    font-family: monospace;
+    font-style: initial;
+}
+
+.deep {
+    background-color: aqua;
+}
+
+.things {
+    background-color: lightblue;
+    font-family: "Georgia", 'New Century Schoolbook', serif;
+    font-style: bold;
+}
+
+.how {
+    background-color: lightseagreen;
+    font-family: "Western", "Comic Sans", fantasy;
+    font-style: bold;
+}
+
+.taking {
+    background-color: lightskyblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: bold;
+}
+
+.enjoy {
+    background-color: lightyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+}
+
+.deep {
+    border: thin solid;
+}
+
+.things {
+    border: dotted;
+}
+
+.how {
+    border-bottom-style: double;
+}
+
+.how2 {
+    border-bottom-style: dotted;
+}
+
+#first {
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+#second {
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+.end {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
