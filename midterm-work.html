@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<title>Midterm Exam, CSC 235 Web Programming I, Spring 2020</title>
+	<link rel="stylesheet" href="midterm.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Midterm Exam</h1>
+
+    <form action="https://moodle.converse.edu/CSC235/formecho.php" 
+	  method="post" id="postform">
+      <fieldset>
+	<div><label for="name">Please enter your name: </label>
+	  <input type="text" name="name" value="" id="name" /></div>
+	<div><label for="grad-2017">I expect to graduate in:</label>
+	  <span>
+	    <input type="radio" name="grad-year" value="2018" id="grad-2018" />
+	    <label for="grad-2018">2018</label></span>
+	  <span>
+	    <input type="radio" name="grad-year" value="2019" id="grad-2019"/>
+	    <label for="grad-2019">2019</label></span>
+	  <span>
+	    <input type="radio" name="grad-year" value="2020" id="grad-2020" />
+	    <label for="grad-2020">2020</label></span>
+	  <span>
+	    <input type="radio" name="grad-year" value="2021" id="grad-2021"/>
+	    <label for="grad-2017">2021</label></span>
+	</div>
+	<div><label for="color">I am wearing clothes of the following colors (check all
+		that apply):</label> 
+		<input type="radio" name='color' value="Brown" /><label>Brown</label>
+        <input type="radio" name='color' value="White" /><label>White</label>
+        <input type="radio" name='color' value="Black" /><label>Black</label>
+        <input type="radio" name='color' value="Grey" /><label>Grey</label>
+		<br />
+	  
+	
+	
+	</div>
+	<input type="reset" value="Reset" /><input type="submit" value="Submit"/>
+      </fieldset>
+    </form>
+
+  </body>
+</html>
