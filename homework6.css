@@ -1,3 +1,12 @@
 .up {
     vertical-align: top;
+    line-height: 150%;
+    display: inline;
+}
+
+.down {
+    column-width: 25em;
+    column-rule-width: thin;
+    column-rule-style: solid;
+    column-rule-color: grey;
 }
