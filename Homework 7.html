@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Homework 7 CSC 235</title>
+    <script src="homework7.js"></script>
+</head>
+<body>
+    <h1>Personal Betta Information</h1>
+
+    <p>Will you be handing over your soul to the Betta Grump today? <span id="class_answer"></span></p>
+    <script>
+      document.querySelector('#class_answer').innerHTML = makeChoice() + '.';
+    </script>
+    <noscript><code>
+      document.querySelector('#class_answer').innerHTML = makeChoice() + '.';
+    </code></noscript>
+
+    <h2>GET form</h2>
+
+    <form action='https://moodle.converse.edu/CSC235/formecho.php' method='get' name="getform">
+        <input type="hidden" name="hidden" value="This is what you entered on the previous page." />
+        <label for="name">What is your Betta's name?</label> <input type="text" name='name'/><br/>
+        <label for="grump">Is your betta in a constant state of grumpiness?</label> <input type="text" name='grump'/><br/>
+        <label for="level">What is your betta's level of grump?</label> 
+        <input type="number" min="0" max='100' name='level'/><br />
+        <label for="subspecies">The betta is:</label> 
+        <input type="radio" name='subspecies' value="Veltail" /><label>Veltail</label>
+        <input type="radio" name='subspecies' value="Halfmoon" /><label>Halfmoon</label>
+        <input type="radio" name='subspecies' value="Crowntail" /><label>Crowntail</label>
+        <input type="radio" name='subspecies' value="DoubleTail" /><label>Doubletail</label>
+        <input type="radio" name='subspecies' value="FeatherTail" /><label>FeatherTail</label>
+        <input type="radio" name='subspecies' value="Plakat" /><label>Plakat</label>
+        <input type="radio" name='subspecies' value="DumboEar" /><label>DumboEar</label><br />
+        <label for="Birth">What is your betta's date of birth?</label>
+        <input type="bday" value="##/##/###" name="Birth" pattern="[0-12]{1}/[0-31]{1}/[2017-2020]{1}" required /><br />
+        <label for="Gender">Is Your betta male?</label>
+        <input type="radio" value="yes" name='Gender' /><label>Yes</label>
+        <input type="radio" value="no" name='Gender' /><label>No</label><br />
+        <label for="colormenu">What is your Betta's color?</label> <select name="colormenu">
+            <option>Red</option>
+            <option>Pink</option>
+            <option>Blue</option>
+            <option>White</option>
+            <option>Black</option>
+            <option>Color Combo</option>
+        </select><br />
+        <input type="checkbox" name="legal" required />
+        <label for="legal">I have read and agreed to the terms of selling my soul to the betta grump.</label><br />
+        <input type="reset" />
+        <input type="submit" value='Submit.'/>
+    </form>
+    <form>
+        <button onclick="this.innerHTML = 'There\'s no escaping the betta grump now. Your soul is mine!';"
+	      type="button" id="event_handler_button">Maybe you shouldn't have agreed to that...</button>
+    </form>
+
+    
+    <h2>POST form</h2>
+
+    <form action='https://moodle.converse.edu/CSC235/formecho.php' method='post' name="postform">
+        <input type="hidden" name="hidden" value="This is what you entered on the previous page." />        <label for="name">What is your name?</label> <input type="text" name='name'/><br/>
+        <label for="Name">What is your betta's name?</label> <input type="text" name='Name'/><br/>
+        <label for="level">What is your betta's level of grump?</label>
+        <input type="number" min="0" max='100' name='level'/><br/>
+        <label for="subspecies">The betta is:</label> 
+        <input type="radio" name='subspecies' value="Veltail" /><label>Veltail</label>
+        <input type="radio" name='subspecies' value="Halfmoon" /><label>Halfmoon</label>
+        <input type="radio" name='subspecies' value="Crowntail" /><label>Crowntail</label>
+        <input type="radio" name='subspecies' value="Doubletail" /><label>Doubletail</label>
+        <input type="radio" name='subspecies' value="Feathertail" /><label>Feathertail</label>
+        <input type="radio" name='subspecies' value="Plakat" /><label>Plakat</label>
+        <input type="radio" name='subspecies' value="DumboEar" /><label>DumboEar</label><br />
+        <label for="birth">What is your betta's date of birth?</label>
+    <input type="bday" value="##/##/####" name="bday" pattern="[0-12]{1}/[0-31]{1}/[2017-2020]{1}" required /><br />
+        <label for="Gender">Is your betta male?</label>
+        <input type="radio" value="yes" name='Gender' /><label>Yes</label>
+        <input type="radio" value="no" name='Gender' /><label>No</label><br />
+        <label for="colormenu">What is your Betta's color?</label> <select name="colormenu">
+            <option>Red</option>
+            <option>Pink</option>
+            <option>Blue</option>
+            <option>White</option>
+            <option>Black</option>
+            <option>Color Combo</option>
+        </select><br />
+        <input type="checkbox" name="legal" required />
+        <label for="legal">I have read and agreed to the terms of selling my soul to the betta grump.</label><br />
+        <input type="reset" />
+        <input type="submit" value='Submit.  ' />
+    </form>
+
+</body>
+</html>
